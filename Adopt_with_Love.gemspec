@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
                         website. Users can then choose one of those dogs/cats and the CLI returns a link to that animal's
                         profile page."
   spec.description   =  nil
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/justinddaniel/Adopt_with_Love"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
