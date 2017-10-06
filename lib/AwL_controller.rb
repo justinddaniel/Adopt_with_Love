@@ -2,7 +2,7 @@
 require 'pry'
 class AwLController
 
-  attr_accessor :PetsListing, :pet
+  attr_accessor :PetsListing, :pet, :peturl
 
   def initialize
   end
@@ -19,7 +19,6 @@ class AwLController
     input = gets.strip
     input = input.to_i
     if input == 1
-      binding.pry
       self.pet = PetsListing.new
       self.pet.dog
     elsif input == 2
@@ -38,7 +37,9 @@ class AwLController
     else
       index = input.to_i
     end
-    peturl = pet.petprofiles[index]
+    peturl = self.pet.petprofiles[index]
+    binding.pry
+    system("open #{peturl}")
   end
 
 
