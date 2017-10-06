@@ -10,6 +10,7 @@ class AwLController
     puts "Hello! If you are interested in adopting a dog, type '1'."
     puts "If you are intested in adopting a cat, type '2'."
     petchoice
+    puts "please type the number of the pet you wish to view, or type 'exit'"
   end
 
   def petchoice
