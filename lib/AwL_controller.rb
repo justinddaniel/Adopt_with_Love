@@ -35,11 +35,10 @@ class AwLController
     if input == 'exit'
       self.summon
     else
-      index = input.to_i
+      index = (input.to_i - 1)
     end
     peturl = self.pet.petprofiles[index]
-    binding.pry
-    system("open #{peturl}")
+    puts peturl
   end
 
 
