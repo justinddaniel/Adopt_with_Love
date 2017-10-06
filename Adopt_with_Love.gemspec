@@ -1,4 +1,5 @@
 # coding: utf-8
+# DO NOT DELETE THS PAGE. REQUIRED TO RUN!
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "Adopt_with_Love/version"
