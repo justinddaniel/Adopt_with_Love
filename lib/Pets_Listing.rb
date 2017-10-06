@@ -7,7 +7,8 @@ class PetsListing
   end
 
   def dog
-    puts "Woof!"
+    html = open("http://humanesocietyswm.org/dogs-for-adoption/")
+    doc = Nokogiri::HTML(html)
   end
 
   def cat
