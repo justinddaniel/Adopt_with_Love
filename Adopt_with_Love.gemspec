@@ -9,8 +9,11 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'Justin Daniel'"]
   spec.email         = ["'justinddaniel@gmail.com'"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = "This gem scrapes from the Human Society of Southwest Michigan and generates a CLI where users can
+                        choose if they would like a dog or cat. The CLI then returns a list of dogs/cats scraped from the
+                        website. Users can then choose one of those dogs/cats and the CLI returns a link to that animal's
+                        profile page."
+  spec.description   =  nil
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
