@@ -11,6 +11,7 @@ class AwLController
     puts "If you are intested in adopting a cat, type '2'."
     petchoice
     puts "please type the number of the pet you wish to view, or type 'exit'"
+    petselection
   end
 
   def petchoice
@@ -25,5 +26,16 @@ class AwLController
       self.call
     end
   end
+
+  def petselection
+    input = gets.strip
+    if input == 'exit'
+      break
+    else
+      index = input_to_i -1
+    end
+
+
+
 
 end

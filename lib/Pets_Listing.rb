@@ -7,6 +7,7 @@ class PetsListing
 
   def initialize
     @petslist = []
+    @petprofile = []
   end
 
   def dog
