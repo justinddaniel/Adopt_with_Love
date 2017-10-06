@@ -1,5 +1,8 @@
+require 'pry'
+require 'nokogiri'
 class PetsListing
 
+  attr_accessor :dog, :cat
   attr_reader :petslist
 
   def initialize
