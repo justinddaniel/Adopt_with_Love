@@ -11,7 +11,7 @@ class PetsListing
   end
 
   def cat
-    puts "Meow!"
+    puts "Meow! Meow!"
   end
 
 end
