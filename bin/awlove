@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
+#This file is how users actually interact with the program. The program
+#can run with ./bin/awlove typed in the terminal.
+#The actual interactions and work is then given to AwLController Class.
 require_relative '../config/environment'
 
 AwLController.new.summon
