@@ -1,7 +1,8 @@
 #This is my CLI controller called by the bin/awlove file, with which the user interacts.
+require 'pry'
 class AwLController
 
-  attr_accessor :PetsListing
+  attr_accessor :PetsListing, :pet
 
   def initialize
   end
@@ -18,22 +19,27 @@ class AwLController
     input = gets.strip
     input = input.to_i
     if input == 1
-      PetsListing.new.dog
+      binding.pry
+      self.pet = PetsListing.new
+      self.pet.dog
     elsif input == 2
-      PetsListing.new.cat
+      self.pet = PetsListing.new.cat
+      self.pet.cat
     else
       puts "Invalid selection. Please type '1' or '2'."
-      self.call
+      self.summon
     end
   end
 
   def petselection
     input = gets.strip
     if input == 'exit'
-      break
+      self.summon
     else
-      index = input_to_i -1
+      index = input.to_i
     end
+    peturl = pet.petprofiles[index]
+  end
 
 
 
