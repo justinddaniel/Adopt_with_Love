@@ -22,7 +22,7 @@ class AwLController
       self.pet = PetsListing.new
       self.pet.dog
     elsif input == 2
-      self.pet = PetsListing.new.cat
+      self.pet = PetsListing.new
       self.pet.cat
     else
       puts "Invalid selection. Please type '1' or '2'."

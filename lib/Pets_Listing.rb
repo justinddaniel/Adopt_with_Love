@@ -28,7 +28,20 @@ class PetsListing
   end
 
   def cat
-    puts "Meow! Meow! Meow!"
+    html = open("http://humanesocietyswm.org/dogs-for-adoption/")
+    doc = Nokogiri::HTML(html)
+    sites = doc.css("#grid-gallery-3 a")
+    sites.each do |s|
+      @petprofiles << s['href']
+    end
+
+    names = doc.css(".gg-image-caption")
+    c = 1
+    names.each do |n|
+      @petslist << "#{c}. #{n.text}"
+      c += 1
+    end
+    puts @petslist
   end
 
 end
