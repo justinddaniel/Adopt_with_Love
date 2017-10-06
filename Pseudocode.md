@@ -4,7 +4,8 @@ Pushing to GitHub:
 1. 'git status' to see new changes
 2. 'git add .' to capture all changes in the parent directory (make sure you are in main directory Adopt_with_Love)
 3. 'git commit -am "blah blah blah"' where commit -am commits all changes to github and the m part is the message to commit with explaining the changes.
-4. 'git push' to actually push up the changes. This is the part I was missing before.
+4. 'git push' to actually push up the changes. This is the part I was missing before. Also use 'git push branch' where branch is where specifically to   
+    push, to specify branch.
 
 -I want to scrape from a public website and return useful information in a user CLI.
 -First I can decide on purposes and the website I want to scrape from.
