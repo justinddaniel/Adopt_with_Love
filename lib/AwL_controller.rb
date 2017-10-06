@@ -40,8 +40,4 @@ class AwLController
     peturl = self.pet.petprofiles[index]
     puts peturl
   end
-
-
-
-
 end
