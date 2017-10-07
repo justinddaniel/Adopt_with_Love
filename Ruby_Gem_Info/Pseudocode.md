@@ -1,3 +1,13 @@
+The text below was written by me, the programmer (Justin Daniel) during the early stages of development. I thought to keep it with the
+code for those interested in some of the thought processes of the programmer during its conception and first coding. The first
+part indicates how I had to figure out how to properly document and push to GitHub and helps explain why some of the early commits
+appear odd! The rest of the text indicates how I conceived of its setup, and in particular how I wanted users to use the CLI and
+how I envisioned different objects interacting in the code.
+
+-Justin Daniel
+
+```
+
 Ruby OO CLI Data Gem Project Brainstorming
 
 Pushing to GitHub:
