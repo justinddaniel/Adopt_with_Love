@@ -34,8 +34,11 @@ class AwLController
     input = gets.strip
     if input == 'exit'
       self.summon
-    else
+    elsif  input.to_i > 0
       index = (input.to_i - 1)
+    else
+      puts "Invalid selection. Please type the number of the pet you wish to view or type 'exit'."
+      petselection
     end
     peturl = self.pet.petprofiles[index]
     puts peturl

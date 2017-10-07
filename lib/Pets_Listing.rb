@@ -28,9 +28,9 @@ class PetsListing
   end
 
   def cat
-    html = open("http://humanesocietyswm.org/dogs-for-adoption/")
+    html = open("http://humanesocietyswm.org/cats-for-adoption/")
     doc = Nokogiri::HTML(html)
-    sites = doc.css("#grid-gallery-3 a")
+    sites = doc.css("#grid-gallery-1 a")
     sites.each do |s|
       @petprofiles << s['href']
     end
