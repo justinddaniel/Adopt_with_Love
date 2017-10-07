@@ -4,4 +4,5 @@
 #The actual interactions and work is then given to AwLController Class.
 require_relative '../config/environment'
 
-AwLController.new.summon
+AwLController.new.summon #Creates new instance of AwLController Class
+#and calls the instance method 'summon' on it. See Lib/AwL_controller.rb.
